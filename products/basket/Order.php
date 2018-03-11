@@ -11,7 +11,7 @@ class Order extends Basket
     {
         echo "Стоимость заказа: " . $this->bas->getTotalPrice() . "руб";
     }
-    public function print_order()
+    public function printOrder()
     {
         $arr_name_price = [];
         foreach ($this->bas->products as $product) {

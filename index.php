@@ -4,6 +4,9 @@ $Tv = new Products\tele\Tele("Sony", 50000, "White");
 $Car = new Products\cars\Car("BMW", 10000, "X3", 2.5, 1);
 $Pen = new Products\pens\Pen("Pen", 50, "red");
 $bas = new basket\Basket();
+$Tv->setTitle('Samsung');
+echo '<br>';
+print_r($Tv);
 $bas->addBasket($Tv);
 $bas->addBasket($Car);
 $bas->addBasket($Pen);
@@ -12,7 +15,7 @@ var_dump($bas->deleteProduct("Sony"));
 var_dump($bas->getTotalPrice());
 echo '</pre>';
 $order = new basket\Order($bas);
-var_dump($order->print_order());
+var_dump($order->printOrder());
 var_dump($order->getPrice());
 ?>
 <!DOCTYPE html>
