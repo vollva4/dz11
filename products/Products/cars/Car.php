@@ -1,8 +1,8 @@
 <?php
 namespace Products\cars;
 class Car extends \Product implements carImplement {
-
-	public $color;
+//
+    public $color;
     public $engineVol;
     public $count;
     public function __construct($nameProduct, $price, $model, $engineVol, $count = 0)
